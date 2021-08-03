@@ -5,7 +5,7 @@ const quizData = [
         b : 'Python',
         c : 'Javascript',
         d : 'C++',
-        correct : 'd'
+        correct : 'c'
     }, {
         question : 'Which type of JavaScript language is ?',
         a : 'Object-Oriented',
@@ -39,7 +39,7 @@ const quizData = [
 ];
 
 const quiz =document.getElementById('quiz');
-const answerEls = document.querySelectorAll(".answer");
+const answerEls = document.querySelectorAll(".answer"); // for the number of answer =4
 const questionE1 = document.getElementById('question');
 const a_text =document.getElementById('a_text');
 const b_text =document.getElementById('b_text');
@@ -95,7 +95,7 @@ submitBtn.addEventListener('click', () => {
         if(currentQuiz < quizData.length){
             loadQuiz();
         } else {
-            quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2> <button class="btn btn-success" onclick="location.reload()">Reload</button>`;
+            quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2> <h2>You have scored ${score*100/quizData.length}%</h2>  <button class="btn btn-success" onclick="location.reload()">Reload</button>`;
         }
 
        
