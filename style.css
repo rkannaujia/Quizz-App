@@ -20,16 +20,27 @@ body {
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
     width: 400px;
     max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column; 
 }
 .quiz-header {
-    padding: 2rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;  
+    flex-direction: column;
 }
 h2 {
     margin: 0;
 }
+
 ul {
     list-style: none;
     padding: 0;
+
+    
 }
 ul li {
     margin: 1rem 0;
@@ -43,8 +54,9 @@ button {
     font-family: inherit;
     font-size: 1.1rem;
     width: 100%;
-    padding: 1.3rem;
-    border-radius: 10px;  
+    padding: 1rem;
+    border-radius: 10px; 
+    width: 80%; 
 }
 
 
